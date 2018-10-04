@@ -134,7 +134,7 @@ std::vector<std::string> Trie::wordsWithWildcardPrefix(std::string prefix) {
   {
     currentChar = prefix[counter];
     // If '?' is encountered, add a new string for each letter of the alphabet for
-    // each string already in the vector. Not that those already there are left,
+    // each string already in the vector. Note that those already there are left,
     // to account for the case that '?' may mean no letter at all.
     if (currentChar == '?' && allPossiblePrefixes.size() > 0)
     {
@@ -159,6 +159,7 @@ std::vector<std::string> Trie::wordsWithWildcardPrefix(std::string prefix) {
           for (unsigned int counterTwo = 0; counterTwo < 26; counterTwo++) {
             allPossiblePrefixes.push_back(std::string(1, counterTwo + 97));
           }
+          allPossiblePrefixes.push_back("");
         }
       }
       else { // Not first char in prefix, and not question mark, so simply concat to all existing prefixes

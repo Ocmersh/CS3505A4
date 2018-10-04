@@ -144,7 +144,7 @@ TEST(TestWordsWithWildcardPrefix, testWildcardCharForm) {
   std::vector<std::string> theWords = myFirstTrie.wordsWithWildcardPrefix("?l");
   unsigned int expectedSize = 5;
   std::cout << theWords.size() << std::endl;
-  //EXPECT_EQ(expectedSize, theWords.size());
+  EXPECT_EQ(expectedSize, theWords.size());
 }
 
 // Copy constructor basic testing
