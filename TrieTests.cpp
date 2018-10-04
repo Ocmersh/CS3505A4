@@ -6,9 +6,29 @@
 
 #include <iostream>
 #include <fstream>
+#include <gtest/gtest.h>
 #include "Trie.h"
 
-//test
+
+  TEST(TrieTests, Largeuery)
+      {
+
+      }
+
+  TEST(TrieTests, RandomAdd)
+    {
+
+    }
+
+  TEST(TrieTests, PrefixAdd)
+    {
+
+    }
+
+int main(int argc, char **argv)
+    {
+    testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 
 
 // comment
