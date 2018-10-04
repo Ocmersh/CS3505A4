@@ -7,6 +7,7 @@
 #include <iostream>
 #include <fstream>
 #include "Trie.h"
+#include "gtest/gtest.h"
 
 //test
 

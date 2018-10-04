@@ -4,15 +4,16 @@
 
 CC = g++
 CFLAGS = -Wall -fsanitize=address -fsanitize=undefined
+GOOGLETEST = ../googletest/googletest
 
 Trie.o : Trie.h Trie.cpp
 	$(CC) $(CFLAGS) -c Trie.h Trie.cpp
 
-TrieTest : TrieTest.cpp Trie.o
-	$(CC) $(CFLAGS) -o TrieTest TrieTest.cpp Trie.o
+TrieTests : TrieTests.cpp Trie.o
+	$(CC) $(CFLAGS) -o TrieTests TrieTests.cpp Trie.o -I $(GOOGLETEST)/include -L $(GOOGLETEST)/lib
 
 clean:
 	rm -f *.o *.a *.h.gch test
 
 test:
-	./TrieTest "dictionary.txt" "query.txt"
+	./TrieTests
