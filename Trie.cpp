@@ -159,7 +159,7 @@ std::vector<std::string> Trie::wordsWithWildcardPrefix(std::string prefix) {
           for (unsigned int counterTwo = 0; counterTwo < 26; counterTwo++) {
             allPossiblePrefixes.push_back(std::string(1, counterTwo + 97));
           }
-          allPossiblePrefixes.push_back("");
+          allPossiblePrefixes.push_back(""); // This line added in A4
         }
       }
       else { // Not first char in prefix, and not question mark, so simply concat to all existing prefixes
