@@ -11,24 +11,25 @@
 
 
   TEST(TrieTests, Largeuery)
-      {
-
-      }
+    {
+      ASSERT_EQ(0, 0);
+    }
 
   TEST(TrieTests, RandomAdd)
     {
-
+      ASSERT_EQ(0, 0);
     }
 
   TEST(TrieTests, PrefixAdd)
     {
-
+      ASSERT_EQ(0, 0);
     }
 
 int main(int argc, char **argv)
     {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
+    }
 
 
 // comment

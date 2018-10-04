@@ -15,4 +15,4 @@ clean:
 	rm -f *.o *.a *.h.gch test
 
 test:
-	./TrieTest "dictionary.txt" "query.txt"
+./TrieTest "dictionary.txt" "query.txt"
