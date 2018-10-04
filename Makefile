@@ -4,7 +4,7 @@
 
 CC = g++
 CFLAGS = -Wall -fsanitize=address -fsanitize=undefined
-GOOGLETEST = ../googletest/googletest
+GOOGLETEST ?= ../googletest/googletest
 
 Trie.o : Trie.h Trie.cpp
 	$(CC) $(CFLAGS) -c Trie.h Trie.cpp

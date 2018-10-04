@@ -1,4 +1,10 @@
 install: true
 language: cpp
 compiler: g++
-script: make
+script:
+  - git clone https://github.com/google/googletest.git
+  - cd googletest/googletest
+  - cmake .
+  - make clean
+  - make all
+  - make
