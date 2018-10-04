@@ -2,9 +2,12 @@
  * Christopher Hanson
  * CS3505 Fall 2018, University of Utah
  * Assignment A3: A Trie and the Rule-of-Three
+ *
+ * Modified for A4: Testing and Travis
+ * Refactoring by Christopher Hanson and Bryce Hansen
 */
 
-//#include <iostream> // REMEMBER TO REMOVE
+//#include <iostream>
 #include "Trie.h"
 
 // FUNCTION: Constructs new Trie.
