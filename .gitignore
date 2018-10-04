@@ -1,3 +1,4 @@
 *.o
 *.exe
 *.h.gch
+TrieTests
